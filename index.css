@@ -53,3 +53,34 @@ nav .tag {
 	max-width: 500px;
 }
 
+main {
+	display: flex;
+	justify-content: center;
+}
+
+main a {
+	text-decoration: none;
+}
+
+.join-acm {
+	padding: 50px 100px;
+	
+	background: #6af;
+	
+	color: #fff;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 5px 0px #222;
+	font-size: 20pt;
+	margin-left: 100px;
+	margin-top: 100px;
+
+}
+
+.m-full {
+	width: 100%;
+
+}
+
+
