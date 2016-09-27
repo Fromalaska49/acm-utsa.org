@@ -1,0 +1,55 @@
+body {
+	background: #347;
+	margin: 0;
+	padding: 0;
+}
+
+body * {
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+
+	
+
+	
+}
+
+nav .tag h1 {
+	font-weight: 100;
+	color: #eee;
+	font-family: sans-serif;
+	font-size: 24pt;
+	
+}
+
+nav menu {
+	
+	justify-content: space-around;
+	font-weight: 100;
+	max-width: calc(100% - 500px);
+	flex-wrap: wrap;
+	
+}
+
+nav menu a {
+	text-decoration: none;
+	color: #eee;
+	margin: 10px;
+	font-size: 16pt;
+	transition: all .2s ease-in-out;
+	
+}
+
+nav menu a:hover {
+	border-bottom: solid 1px #ffa500;
+}
+
+nav .tag {
+	display: flex;
+	max-width: 500px;
+}
+
