@@ -1,3 +1,4 @@
+/*
 body {
 	margin: 0;
 	padding: 0;
@@ -46,6 +47,10 @@ nav menu a:hover {
 nav .tag {
 	display: flex;
 	max-width: 500px;
+}
+*/
+.navbar {
+	margin-bottom: 0;
 }
 /*
 main {
@@ -104,6 +109,7 @@ main a {
 }
 
 #content {
-	margin: 200px 0px 0px 0px;
+	margin: 200px 0 0 0;
 	background-color: #ccc;
+	min-height: 500px; /* for demonstration */
 }
