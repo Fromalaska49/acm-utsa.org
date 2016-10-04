@@ -1,5 +1,4 @@
 body {
-	background: #347;
 	margin: 0;
 	padding: 0;
 }
@@ -12,10 +11,6 @@ body * {
 nav {
 	display: flex;
 	justify-content: space-between;
-
-	
-
-	
 }
 
 nav .tag h1 {
@@ -83,4 +78,21 @@ main a {
 
 }
 
+#menu-container {
+	background-color: #347;
+}
+
+#sub-menu {
+	background-color:#ccc;
+	padding:0px;
+	margin:0px;
+}
+
+.sub-menu-item {
+	margin:0px -2px;
+	padding:20px;
+	display:inline-block;
+	color:white;
+	text-decoration:none;
+}
 
