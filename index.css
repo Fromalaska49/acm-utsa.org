@@ -47,7 +47,7 @@ nav .tag {
 	display: flex;
 	max-width: 500px;
 }
-
+/*
 main {
 	display: flex;
 	justify-content: center;
@@ -56,7 +56,7 @@ main {
 main a {
 	text-decoration: none;
 }
-
+*/
 .join-acm {
 	padding: 50px 100px;
 	
@@ -79,6 +79,13 @@ main a {
 }
 
 #menu-container {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+}
+
+#main-menu-container {
 	background-color: #347;
 }
 
@@ -96,3 +103,7 @@ main a {
 	text-decoration:none;
 }
 
+#content {
+	margin: 200px 0px 0px 0px;
+	background-color: #ccc;
+}
