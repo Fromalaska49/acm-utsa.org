@@ -62,6 +62,11 @@ main a {
 	text-decoration: none;
 }
 */
+
+* {
+	transition: all .2s ease;
+}
+
 .join-acm {
 	padding: 50px 100px;
 	
@@ -91,7 +96,8 @@ main a {
 }
 
 #main-menu-container {
-	background-color: #347;
+	background-color: #204972;
+	color:#ffffff;
 }
 
 #sub-menu {
@@ -105,6 +111,11 @@ main a {
 	padding:20px;
 	display:inline-block;
 	color:white;
+	text-shadow:0px 0px 1px #000;
+}
+
+.sub-menu-item:hover{
+	color:#fff;
 	text-decoration:none;
 }
 
@@ -112,4 +123,16 @@ main a {
 	margin: 200px 0 0 0;
 	background-color: #ccc;
 	min-height: 500px; /* for demonstration */
+}
+
+.navbar-toggle{
+	background-color:#ddd;
+}
+
+.nav>li>a{
+	color:#ffffff;
+}
+
+.nav>li>a:hover{
+	background-color: #296097;
 }
