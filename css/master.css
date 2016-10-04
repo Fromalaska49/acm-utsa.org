@@ -1,0 +1,55 @@
+/********************************
+Header & navigation bar styles
+********************************/
+.navbar {
+	margin-bottom: 0;
+}
+
+#menu-container {
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+}
+
+#main-menu-container {
+	background-color: #347;
+}
+
+#sub-menu {
+	background-color:#ccc;
+	padding:0px;
+	margin:0px;
+}
+
+.sub-menu-item {
+	margin:0px -2px;
+	padding:20px;
+	display:inline-block;
+	color:white;
+	text-decoration:none;
+}
+
+/********************************
+Main content
+********************************/
+
+#content {
+	margin-top: 200px;
+	background-color: #ccc;
+	min-height: 1000px; /* for demonstration */
+}
+
+/*.join-acm {
+	padding: 50px 100px;
+	background: #6af;
+	color: #fff;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 1px 1px 5px 0px #222;
+	font-size: 20pt;
+	margin-left: 100px;
+	margin-top: 100px;
+
+}*/
