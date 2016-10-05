@@ -166,7 +166,7 @@ main a {
 
 .nav>li>a{
 	color:#ffffff;
-	background-color: ;
+	background-color: inherit;
 }
 
 .nav>li>a:hover{
