@@ -11,19 +11,50 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-left" href="#">
-				<img id="logo" src="images/logo.png" />
+			<a class="navbar-left" href="#">
+				<img id="logo" src="images/logo-bordered.png" />
 			</a>
+			<!--
+			<div style="display:inline;font-size:26px;margin:22px 0px;font-weight:300;">
+				<div style="display:inline-block;">
+					Association for<br />Computing<br />Machinery
+				</div>
+			</div>
+			-->
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Groups</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Officers</a></li>
-				<li><a href="#">Contact Us</a></li>
+      <ul id="main-menu" class="nav navbar-nav navbar-right">
+				<li>
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Groups
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Careers
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Officers
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Contact Us
+					</a>
+				</li>
 				<li class="main-sub-menu-item">
 					<a href="#">
 						Join ACM

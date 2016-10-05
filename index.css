@@ -98,6 +98,7 @@ main a {
 #main-menu-container {
 	background-color: #204972;
 	color:#ffffff;
+	height:130px;
 }
 
 #sub-menu {
@@ -144,8 +145,10 @@ main a {
 }
 
 #logo {
-	width:120px;
+	width:160px;
 	margin:20px;
+	position:relative;
+	top:-20px;
 }
 
 .icon-bar{
