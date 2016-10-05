@@ -18,6 +18,7 @@
 			$("#logo").attr("src", "images/logo-bordered.png");
 			$("#logo").css("position", "relative");
 			$("#logo").css("top", "-20px");
+			$("#main-menu-container").css("height", "130px");
 		}
 		else{
 			$("#sub-menu").css("display", "none");
@@ -29,6 +30,7 @@
 			$("#logo").attr("src", "images/logo.png");
 			$("#logo").css("position", "relative");
 			$("#logo").css("top", "0px");
+			$("#main-menu-container").css("height", "60px");
 		}
 	}
 	$(document).ready(function(){

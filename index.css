@@ -134,6 +134,7 @@ main a {
 
 .nav>li>a{
 	color:#ffffff;
+	background-color: #204972;
 }
 
 .nav>li>a:hover{
