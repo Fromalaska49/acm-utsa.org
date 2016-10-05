@@ -82,9 +82,9 @@
 
 	</div>
 	<div id="sub-menu" class="pull-right">
-		<a href="#" class="sub-menu-item" style="background-color:#3498db;">Join ACM</a>
-		<a href="#" class="sub-menu-item" style="background-color:#2980b9;">Pay Dues</a>
-		<a href="#" class="sub-menu-item" style="background-color:#1f8a70;">Calendar</a>
-		<a href="http://rowdyhacks.com" class="sub-menu-item" style="background-color:#bedb39;">RowdyHacks</a>
+		<a href="#" id="sub-menu-item-1" class="sub-menu-item">Join ACM</a>
+		<a href="#" id="sub-menu-item-2" class="sub-menu-item">Pay Dues</a>
+		<a href="#" id="sub-menu-item-3" class="sub-menu-item">Calendar</a>
+		<a href="http://rowdyhacks.com" id="sub-menu-item-4" class="sub-menu-item">RowdyHacks</a>
 	</div>
 </div>
