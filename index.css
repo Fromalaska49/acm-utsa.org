@@ -125,9 +125,11 @@ main a {
 	min-height: 500px; /* for demonstration */
 }
 
+/*
 .navbar-toggle{
 	background-color:#ddd;
 }
+*/
 
 .nav>li>a{
 	color:#ffffff;
@@ -144,4 +146,8 @@ main a {
 #logo {
 	width:120px;
 	margin:20px;
+}
+
+.icon-bar{
+	background-color: #ffffff;
 }
