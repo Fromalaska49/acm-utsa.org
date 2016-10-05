@@ -12,7 +12,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-left" href="#">
-				<img src="images/logo.png" style="width:160px;margin:20px;" />
+				<img id="logo" src="images/logo.png" />
 			</a>
     </div>
 
