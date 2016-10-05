@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<?php
+			echo('<!-- hi -->');
 			require('head-includes.php');
 		?>
 	</head>
