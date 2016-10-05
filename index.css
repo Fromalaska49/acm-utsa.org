@@ -121,7 +121,7 @@ main a {
 }
 
 #content {
-	margin: 160px 0 0 0;
+	margin: 50px 0px 0px 0px;
 	background-color: #ccc;
 	min-height: 500px; /* for demonstration */
 }
@@ -155,3 +155,29 @@ main a {
 .icon-bar{
 	background-color: #ffffff;
 }
+
+/*
+@media screen and (max-device-width: 767px) {
+	#sub-menu{
+		display: none;
+	}
+	#main-menu{
+		position: ;
+	}
+	.main-sub-menu-item{
+		display: block;
+	}
+	#logo{
+		width: 40px;
+		margin: 5px;
+		position: relative;
+		top: 0px;
+	}
+	#content{
+		margin: 50px 0px 0px 0px;
+	}
+	#main-menu-container{
+		height: 60px;
+	}
+}
+*/
