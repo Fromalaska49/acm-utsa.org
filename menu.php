@@ -24,6 +24,26 @@
 				<li><a href="#">Careers</a></li>
 				<li><a href="#">Officers</a></li>
 				<li><a href="#">Contact Us</a></li>
+				<li class="main-sub-menu-item">
+					<a href="#">
+						Join ACM
+					</a>
+				</li>
+				<li class="main-sub-menu-item">
+					<a href="#">
+						Pay Dues
+					</a>
+				</li>
+				<li class="main-sub-menu-item">
+					<a href="#">
+						Calendar
+					</a>
+				</li>
+				<li class="main-sub-menu-item">
+					<a href="http://rowdyhacks.com">
+						RowdyHacks
+					</a>
+				</li>
       </ul>
     </div>
   </div>

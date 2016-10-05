@@ -136,3 +136,7 @@ main a {
 .nav>li>a:hover{
 	background-color: #296097;
 }
+
+.main-sub-menu-item{
+	display:none;
+}
