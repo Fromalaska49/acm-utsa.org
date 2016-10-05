@@ -98,6 +98,7 @@ main a {
 #main-menu-container {
 	background-color: #204972;
 	color:#ffffff;
+	height:130px;
 }
 
 #sub-menu {
@@ -120,7 +121,7 @@ main a {
 }
 
 #content {
-	margin: 160px 0 0 0;
+	margin: 50px 0px 0px 0px;
 	background-color: #ccc;
 	min-height: 500px; /* for demonstration */
 }
@@ -133,6 +134,7 @@ main a {
 
 .nav>li>a{
 	color:#ffffff;
+	background-color: #204972;
 }
 
 .nav>li>a:hover{
@@ -144,10 +146,38 @@ main a {
 }
 
 #logo {
-	width:120px;
+	width:160px;
 	margin:20px;
+	position:relative;
+	top:-20px;
 }
 
 .icon-bar{
 	background-color: #ffffff;
 }
+
+/*
+@media screen and (max-device-width: 767px) {
+	#sub-menu{
+		display: none;
+	}
+	#main-menu{
+		position: ;
+	}
+	.main-sub-menu-item{
+		display: block;
+	}
+	#logo{
+		width: 40px;
+		margin: 5px;
+		position: relative;
+		top: 0px;
+	}
+	#content{
+		margin: 50px 0px 0px 0px;
+	}
+	#main-menu-container{
+		height: 60px;
+	}
+}
+*/
