@@ -120,7 +120,7 @@ main a {
 }
 
 #content {
-	margin: 200px 0 0 0;
+	margin: 160px 0 0 0;
 	background-color: #ccc;
 	min-height: 500px; /* for demonstration */
 }
@@ -139,4 +139,9 @@ main a {
 
 .main-sub-menu-item{
 	display:none;
+}
+
+#logo {
+	width:120px;
+	margin:20px;
 }
