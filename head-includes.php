@@ -14,7 +14,7 @@
 			$sub_menu.css("display", "block");
 			$main_menu.css("position", "fixed");
 			$main_menu.css("right", right_spacing + "px");
-			$main_menu.css("top", ($("#main-menu-container").outerHeight() - $("#main-menu").outerHeight()));
+			$main_menu.css("top", "80px");//($("#main-menu-container").outerHeight() - $("#main-menu").outerHeight()));
 			$main_menu.css("margin", "0px");
 			$logo.css("width", "160px");
 			$logo.css("margin", "20px");
