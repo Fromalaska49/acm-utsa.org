@@ -10,18 +10,12 @@
 		<?php
 			require('menu.php');
 		?>
-		<center>
-			<div id="content" class="container">
+		<div id="content" class="container">
+			<div class="row">
 				<div class="col-sm-12">
-					<!--<div class="m-full">
-						<a href="#">
-							<div class="join-acm">
-								Join ACM
-							</div>
-						</a>
-					</div>-->
+					<!-- content here! -->
 				</div>
 			</div>
-		</center>
+		</div>
 	</body>
 </html>

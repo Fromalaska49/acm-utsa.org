@@ -1,8 +1,16 @@
-/********************************
-Header & navigation bar styles
-********************************/
+/****************************
+Navbar
+****************************/
 .navbar {
 	margin-bottom: 0;
+}
+
+.navbar-header {
+	margin-left: -85px !important;
+}
+
+* {
+	transition: all .2s ease;
 }
 
 #menu-container {
@@ -13,7 +21,9 @@ Header & navigation bar styles
 }
 
 #main-menu-container {
-	background-color: #347;
+	background-color: #204972;
+	color:#ffffff;
+	height:130px;
 }
 
 #sub-menu {
@@ -27,29 +37,78 @@ Header & navigation bar styles
 	padding:20px;
 	display:inline-block;
 	color:white;
+	text-shadow:0px 0px 1px #000;
+}
+
+.sub-menu-item:hover {
+	color:#fff;
 	text-decoration:none;
 }
 
-/********************************
-Main content
-********************************/
-
-#content {
-	margin-top: 200px;
-	background-color: #ccc;
-	min-height: 1000px; /* for demonstration */
+#sub-menu-item-1 {
+	background-color:#217dba; /* 10% darker than on hover */
 }
 
-/*.join-acm {
-	padding: 50px 100px;
-	background: #6af;
-	color: #fff;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 1px 1px 5px 0px #222;
-	font-size: 20pt;
-	margin-left: 100px;
-	margin-top: 100px;
+#sub-menu-item-1:hover {
+	background-color:#3498db;
+}
 
-}*/
+#sub-menu-item-2 {
+	background-color:#007184; /* 10% darker than on hover */
+}
+
+#sub-menu-item-2:hover {
+	background-color:#009cb8;
+}
+
+#sub-menu-item-3 {
+	background-color:#2a844a; /* 10% darker than on hover */
+}
+
+#sub-menu-item-3:hover {
+	background-color:#36ab5f;
+}
+
+#sub-menu-item-4 {
+	background-color:#87c115; /* 10% darker than on hover */
+}
+
+#sub-menu-item-4:hover {
+	background-color:#a5e723;
+}
+
+#content {
+	margin-top: 50px;
+	background-color: #ccc;
+	min-height: 500px; /* for demonstration */
+}
+
+/*
+.navbar-toggle{
+	background-color:#ddd;
+}
+*/
+
+.nav>li>a{
+	color:#ffffff;
+	background-color: inherit;
+}
+
+.nav>li>a:hover{
+	background-color: #296097;
+}
+
+.main-sub-menu-item{
+	display:none;
+}
+
+#logo {
+	width:160px;
+	margin:20px;
+	position:relative;
+	top:-20px;
+}
+
+.icon-bar{
+	background-color: #ffffff;
+}
