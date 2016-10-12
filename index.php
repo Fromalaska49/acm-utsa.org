@@ -2,9 +2,9 @@
 <html>
 	<head>
 		<?php
-			echo('<!-- hi -->');
 			require('head-includes.php');
 		?>
+        <title>The Association for Computing Machinery &mdash; UTSA</title>
 	</head>
 	<body>
 		<?php

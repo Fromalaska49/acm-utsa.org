@@ -1,16 +1,40 @@
 /****************************
-Navbar
+	Global styles
 ****************************/
+* {
+	transition: all .2s ease;
+}
+
+/****************************
+	Header & main navbar
+****************************/
+#main-menu-container {
+	background-color: #204972;
+	color: #ffffff;
+	height: 130px;
+}
+
+.navbar-collapse {
+	background-color: #204972;
+}
+
+.navbar, .navbar > div, .navbar-header {
+	height: 130px;
+}
+
 .navbar {
 	margin-bottom: 0;
 }
 
-.navbar-header {
-	margin-left: -85px !important;
+.navbar-brand {
+	padding: 0;
+	margin-left: -65px !important;
+	height: 130px;
 }
 
-* {
-	transition: all .2s ease;
+#logo {
+	width:160px;
+	margin: 0;
 }
 
 #menu-container {
@@ -20,10 +44,53 @@ Navbar
 	right:0px;
 }
 
-#main-menu-container {
-	background-color: #204972;
+.nav>li>a{
 	color:#ffffff;
-	height:130px;
+	background-color: inherit;
+}
+
+.nav>li>a:hover{
+	background-color: #296097;
+}
+
+.icon-bar{
+	background-color: #ffffff;
+}
+
+/* width >= 768px (tablet, laptop, desktop) */
+@media (min-width: 768px) {
+	.navbar-right {
+		position: relative;
+		top: 80px !important;
+	}
+	/* Hide sub-menu entries on the main navbar unless collapsed */
+	.main-sub-menu-item {
+		display: none !important;
+	}
+}
+
+/* width < 768px (mobile) */
+@media (max-width: 767px) {
+	#logo {
+		height: 129px;
+		width: 129px;
+	}
+	.navbar-brand {
+		margin: 0 auto !important;
+	}
+}
+
+/****************************
+	Colorful sub-navbar
+****************************/
+#sub-menu-container {
+	padding: 0;
+}
+
+@media (max-width: 767px) {
+	#sub-menu-container {
+		display: none;
+	}
 }
 
 #sub-menu {
@@ -39,7 +106,6 @@ Navbar
 	color:white;
 	text-shadow:0px 0px 1px #000;
 }
-
 .sub-menu-item:hover {
 	color:#fff;
 	text-decoration:none;
@@ -48,7 +114,6 @@ Navbar
 #sub-menu-item-1 {
 	background-color:#217dba; /* 10% darker than on hover */
 }
-
 #sub-menu-item-1:hover {
 	background-color:#3498db;
 }
@@ -56,7 +121,6 @@ Navbar
 #sub-menu-item-2 {
 	background-color:#007184; /* 10% darker than on hover */
 }
-
 #sub-menu-item-2:hover {
 	background-color:#009cb8;
 }
@@ -64,7 +128,6 @@ Navbar
 #sub-menu-item-3 {
 	background-color:#2a844a; /* 10% darker than on hover */
 }
-
 #sub-menu-item-3:hover {
 	background-color:#36ab5f;
 }
@@ -72,43 +135,15 @@ Navbar
 #sub-menu-item-4 {
 	background-color:#87c115; /* 10% darker than on hover */
 }
-
 #sub-menu-item-4:hover {
 	background-color:#a5e723;
 }
 
+/****************************
+	Page content
+****************************/
 #content {
 	margin-top: 50px;
 	background-color: #ccc;
-	min-height: 500px; /* for demonstration */
-}
-
-/*
-.navbar-toggle{
-	background-color:#ddd;
-}
-*/
-
-.nav>li>a{
-	color:#ffffff;
-	background-color: inherit;
-}
-
-.nav>li>a:hover{
-	background-color: #296097;
-}
-
-.main-sub-menu-item{
-	display:none;
-}
-
-#logo {
-	width:160px;
-	margin:20px;
-	position:relative;
-	top:-20px;
-}
-
-.icon-bar{
-	background-color: #ffffff;
+	min-height: 1000px; /* for demonstration */
 }
