@@ -1,8 +1,40 @@
-/********************************
-Header & navigation bar styles
-********************************/
+/****************************
+	Global styles
+****************************/
+* {
+	transition: all .2s ease;
+}
+
+/****************************
+	Header & main navbar
+****************************/
+#main-menu-container {
+	background-color: #204972;
+	color: #ffffff;
+	height: 130px;
+}
+
+.navbar-collapse {
+	background-color: #204972;
+}
+
+.navbar, .navbar > div, .navbar-header {
+	height: 130px;
+}
+
 .navbar {
 	margin-bottom: 0;
+}
+
+.navbar-brand {
+	padding: 0;
+	margin-left: -65px !important;
+	height: 130px;
+}
+
+#logo {
+	width:160px;
+	margin: 0;
 }
 
 #menu-container {
@@ -12,8 +44,53 @@ Header & navigation bar styles
 	right:0px;
 }
 
-#main-menu-container {
-	background-color: #347;
+.nav>li>a{
+	color:#ffffff;
+	background-color: inherit;
+}
+
+.nav>li>a:hover{
+	background-color: #296097;
+}
+
+.icon-bar{
+	background-color: #ffffff;
+}
+
+/* width >= 768px (tablet, laptop, desktop) */
+@media (min-width: 768px) {
+	.navbar-right {
+		position: relative;
+		top: 80px !important;
+	}
+	/* Hide sub-menu entries on the main navbar unless collapsed */
+	.main-sub-menu-item {
+		display: none !important;
+	}
+}
+
+/* width < 768px (mobile) */
+@media (max-width: 767px) {
+	#logo {
+		height: 129px;
+		width: 129px;
+	}
+	.navbar-brand {
+		margin: 0 auto !important;
+	}
+}
+
+/****************************
+	Colorful sub-navbar
+****************************/
+#sub-menu-container {
+	padding: 0;
+}
+
+@media (max-width: 767px) {
+	#sub-menu-container {
+		display: none;
+	}
 }
 
 #sub-menu {
@@ -27,29 +104,46 @@ Header & navigation bar styles
 	padding:20px;
 	display:inline-block;
 	color:white;
+	text-shadow:0px 0px 1px #000;
+}
+.sub-menu-item:hover {
+	color:#fff;
 	text-decoration:none;
 }
 
-/********************************
-Main content
-********************************/
+#sub-menu-item-1 {
+	background-color:#217dba; /* 10% darker than on hover */
+}
+#sub-menu-item-1:hover {
+	background-color:#3498db;
+}
 
+#sub-menu-item-2 {
+	background-color:#007184; /* 10% darker than on hover */
+}
+#sub-menu-item-2:hover {
+	background-color:#009cb8;
+}
+
+#sub-menu-item-3 {
+	background-color:#2a844a; /* 10% darker than on hover */
+}
+#sub-menu-item-3:hover {
+	background-color:#36ab5f;
+}
+
+#sub-menu-item-4 {
+	background-color:#87c115; /* 10% darker than on hover */
+}
+#sub-menu-item-4:hover {
+	background-color:#a5e723;
+}
+
+/****************************
+	Page content
+****************************/
 #content {
-	margin-top: 200px;
+	margin-top: 50px;
 	background-color: #ccc;
 	min-height: 1000px; /* for demonstration */
 }
-
-/*.join-acm {
-	padding: 50px 100px;
-	background: #6af;
-	color: #fff;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 1px 1px 5px 0px #222;
-	font-size: 20pt;
-	margin-left: 100px;
-	margin-top: 100px;
-
-}*/
