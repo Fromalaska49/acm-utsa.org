@@ -41,9 +41,9 @@
 	</div> <!-- #main-menu-container -->
 	<div id="sub-menu-container" class="container">
     	<div id="sub-menu" class="pull-right">
-            <a href="#" id="sub-menu-item-1" class="sub-menu-item">Join ACM</a>
-            <a href="#" id="sub-menu-item-2" class="sub-menu-item">Pay Dues</a>
-            <a href="#" id="sub-menu-item-3" class="sub-menu-item">Calendar</a>
+            <a href="/join" id="sub-menu-item-1" class="sub-menu-item">Join ACM</a>
+            <a href="/dues" id="sub-menu-item-2" class="sub-menu-item">Pay Dues</a>
+            <a href="/calendar" id="sub-menu-item-3" class="sub-menu-item">Calendar</a>
             <a href="http://rowdyhacks.com" id="sub-menu-item-4" class="sub-menu-item">RowdyHacks</a>
 		</div>
     </div>
