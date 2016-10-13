@@ -24,6 +24,7 @@
 
 .navbar {
 	margin-bottom: 0;
+	border-style: none;
 }
 
 .navbar-brand {
@@ -62,6 +63,7 @@
 	.navbar-right {
 		position: relative;
 		top: 80px !important;
+		margin-right: -30px;
 	}
 	/* Hide sub-menu entries on the main navbar unless collapsed */
 	.main-sub-menu-item {
@@ -78,6 +80,11 @@
 	.navbar-brand {
 		margin: 0 auto !important;
 	}
+	#menu-container{
+		position: absolute;
+	}
+	
+	
 }
 
 /****************************
@@ -100,7 +107,7 @@
 }
 
 .sub-menu-item {
-	margin:0px -2px;
+	margin:0px 0px 0px -4px;
 	padding:20px;
 	display:inline-block;
 	color:white;
