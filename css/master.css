@@ -80,6 +80,11 @@
 	.navbar-brand {
 		margin: 0 auto !important;
 	}
+	#menu-container{
+		position: absolute;
+	}
+	
+	
 }
 
 /****************************
