@@ -29,7 +29,6 @@
 
 .navbar-brand {
 	padding: 0;
-	margin-left: -65px !important;
 	height: 130px;
 }
 
@@ -68,6 +67,13 @@
 	/* Hide sub-menu entries on the main navbar unless collapsed */
 	.main-sub-menu-item {
 		display: none !important;
+	}
+}
+
+/* width >= (768px + 65px) (prevents logo from being pushed off the page on tablet, laptop, desktop)  */
+@media (min-width: 833px) {
+	.navbar-brand{
+		margin-left: -65px !important;
 	}
 }
 
