@@ -70,8 +70,8 @@
 	}
 }
 
-/* width >= (768px + 65px) (prevents logo from being pushed off the page on tablet, laptop, desktop)  */
-@media (min-width: 833px) {
+/* width >= (breakpoint + 65px) (prevents logo from being pushed off the page on tablet, laptop, desktop)  */
+@media (min-width: 833px) and (max-width: 992px), (min-width: 1057px) and (max-width: 1200px), (min-width: 1265px){
 	.navbar-brand{
 		margin-left: -65px !important;
 	}
