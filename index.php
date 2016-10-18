@@ -13,7 +13,14 @@
 		<div id="content" class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<!-- content here! -->
+					<h2>Upcoming Events</h2>
+					<p>
+						Meeting on ...
+					</p>
+					<h2>Announcements</h2>
+					<p>
+						Remember to pay your dues!
+					</p>
 				</div>
 			</div>
 		</div>
