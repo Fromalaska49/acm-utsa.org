@@ -4,7 +4,7 @@
 		<?php
 			require('head-includes.php');
 		?>
-        <title>The Association for Computing Machinery &mdash; UTSA</title>
+        <title>Calendar | Association for Computing Machinery UTSA</title>
 	</head>
 	<body>
 		<?php
