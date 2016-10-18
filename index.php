@@ -13,7 +13,17 @@
 		<div id="content" class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<!-- content here! -->
+					<h2>Upcoming Events</h2>
+					<p>
+						Meeting on ...
+					</p>
+					<h2>Announcements</h2>
+					<p>
+						Remember to pay your dues!
+					</p>
+					<a href="http://acm-utsa.slack.com">
+						<input type="button" style="background:url('images/icons/add-to-slack.png');width:143px;background-size:cover;border-radius:5px;" />
+					</a>
 				</div>
 			</div>
 		</div>
