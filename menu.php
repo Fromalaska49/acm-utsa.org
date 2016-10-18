@@ -10,7 +10,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<a class="navbar-brand" href="/">
-						<img id="logo" src="images/logo-bordered.png" />
+						<img id="logo" src="images/logo-bordered.png" alt="The Assocation for Computing Machinery - UTSA Chapter">
 					</a>
 				</div> <!-- .navbar-header -->
 				<div class="collapse navbar-collapse" id="nav-collapse">
