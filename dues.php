@@ -34,10 +34,6 @@
 								});
 							});
 						</script>
-						<br />
-						<br />
-						<input type="button" value="Pay Dues" id="fake-stripe-button" />
-						
 						<div style="display:none;">
 							<form action="process_dues.php" method="post">
 								<script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
@@ -47,6 +43,20 @@
 									data-locale="auto">
 								</script>
 							</form>
+						</div>
+					</div>
+					<div>
+					</div>
+					<div class="row" style="padding-top:100px;">
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-7" style="font-size:24px;">
+							We think it's awesome to have snacks at meetings. Random prizes, travel reimbursements, and other benefits provided for ACM members are all paid for by dues. We believe that it's important to give back to members, so we take every opportunity to make ACM awesome.
+						</div>
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-3" style="padding-top:60px;text-align:center;">
+							<input type="button" value="Pay Dues" id="fake-stripe-button" />
 						</div>
 					</div>
 				</div>
