@@ -15,21 +15,21 @@
 				</div> <!-- .navbar-header -->
 				<div class="collapse navbar-collapse" id="nav-collapse">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="/">Home</a></li>
-						<li><a href="/about">About</a></li>
-						<li><a href="/groups">Groups</a></li>
-						<li><a href="/careers">Careers</a></li>
-						<li><a href="/officers">Officers</a></li>
-						<li><a href="/contact">Contact Us</a></li>
+						<li><a href=".">Home</a></li>
+						<li><a href="about">About</a></li>
+						<li><a href="groups">Groups</a></li>
+						<li><a href="careers">Careers</a></li>
+						<li><a href="officers">Officers</a></li>
+						<li><a href="contact">Contact Us</a></li>
 						<!-- collapse-only menu items -->
 						<li class="main-sub-menu-item">
-							<a href="/join">Join ACM</a>
+							<a href="join">Join ACM</a>
 						</li>
 						<li class="main-sub-menu-item">
-							<a href="/dues">Pay Dues</a>
+							<a href="dues">Pay Dues</a>
 						</li>
 						<li class="main-sub-menu-item">
-							<a href="/calendar">Calendar</a>
+							<a href="calendar">Calendar</a>
 						</li>
 						<li class="main-sub-menu-item">
 							<a href="http://rowdyhacks.com">RowdyHacks</a>
@@ -41,9 +41,9 @@
 	</div> <!-- #main-menu-container -->
 	<div id="sub-menu-container" class="container">
     	<div id="sub-menu" class="pull-right">
-            <a href="#" id="sub-menu-item-1" class="sub-menu-item">Join ACM</a>
-            <a href="#" id="sub-menu-item-2" class="sub-menu-item">Pay Dues</a>
-            <a href="#" id="sub-menu-item-3" class="sub-menu-item">Calendar</a>
+            <a href="join" id="sub-menu-item-1" class="sub-menu-item">Join ACM</a>
+            <a href="dues" id="sub-menu-item-2" class="sub-menu-item">Pay Dues</a>
+            <a href="calendar" id="sub-menu-item-3" class="sub-menu-item">Calendar</a>
             <a href="http://rowdyhacks.com" id="sub-menu-item-4" class="sub-menu-item">RowdyHacks</a>
 		</div>
     </div>

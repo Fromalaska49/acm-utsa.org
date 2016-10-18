@@ -158,8 +158,9 @@
 ****************************/
 #content {
 	margin-top: 130px;
-	background-color: #ccc;
+	padding:54px 30px 20px 30px;
 	min-height: 1000px; /* for demonstration */
+	box-shadow:0px 0px 15px -10px #000;
 }
 
 button, input[type=button], input[type=submit], .strip-button{

@@ -2,13 +2,13 @@
 <html>
 	<head>
 		<?php
-			require('head-includes.php');
+			require('common/head-includes.php');
 		?>
         <title>Contact Us | Association for Computing Machinery UTSA</title>
 	</head>
 	<body>
 		<?php
-			require('menu.php');
+			require('common/menu.php');
 		?>
 		<div id="content" class="container">
 			<div class="row">
