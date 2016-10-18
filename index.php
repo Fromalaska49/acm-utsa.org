@@ -21,6 +21,9 @@
 					<p>
 						Remember to pay your dues!
 					</p>
+					<a href="http://acm-utsa.slack.com">
+						<input type="button" style="background:url('images/icons/add-to-slack.png');width:143px;background-size:cover;border-radius:5px;" />
+					</a>
 				</div>
 			</div>
 		</div>
