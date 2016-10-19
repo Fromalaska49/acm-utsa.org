@@ -14,8 +14,14 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- content here! -->
+					<p>
+
+					</p>
 				</div>
 			</div>
 		</div>
+		<?php
+			require('common/footer.php');
+		?>
 	</body>
 </html>
