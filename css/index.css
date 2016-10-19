@@ -117,15 +117,15 @@
 	min-height: 1000px;
 }
 
-@media (max-width: 767px) {
-	#sub-menu-container {
-		display: none;
-	}
-
-}
 @media (min-width: 833px) and (max-width: 992px), (min-width: 1057px) and (max-width: 1200px), (min-width: 1265px) {
 	.navbar-brand {
 		margin-left: -65px !important;
+	}
+
+}
+@media (max-width: 767px) {
+	#sub-menu-container {
+		display: none;
 	}
 
 }
