@@ -28,7 +28,7 @@
 					<p>
 						The UTSA chapter of ACM was founded by Danny Tsang and Kurt King in the Fall of 2015,
 						who saw the need for a student organization for nearly one thousand computer science
-						students. Since then, the chapter has grown remarkably into a massive organization
+						students. Since then, the chapter has grown at a remarkable pace into a huge organization
 						that provides a valuable social environment for a once-fragmented group.
 					</p>
                     <h1>What We Offer</h1>
