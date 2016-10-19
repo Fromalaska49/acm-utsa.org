@@ -90,8 +90,8 @@
 	#menu-container{
 		position: absolute;
 	}
-	
-	
+
+
 }
 
 /****************************
@@ -159,8 +159,8 @@
 #content {
 	margin-top: 130px;
 	padding: 54px 30px 20px 30px; /* min padding-top:54px; */
-	min-height: 1000px; /* for demonstration */
-	box-shadow:0px 0px 15px -10px #000;
+	min-height: 500px; /* for demonstration */
+	box-shadow:0px 0px 15px -10px #000; /* for demonstration */
 }
 
 button, input[type=button], input[type=submit], .strip-button{
@@ -180,4 +180,11 @@ button:hover, input[type=button]:hover, input[type=submit]:hover, .strip-button:
 	box-shadow: 0px 3px 10px -3px #000000;
 	background-color: #1a4a86;
 	color: #ffffff;
+}
+
+/****************************
+	Footer
+****************************/
+#footer {
+	padding: 20px 30px;
 }
