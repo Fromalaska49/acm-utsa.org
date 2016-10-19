@@ -1,6 +1,6 @@
 from collections import deque
 import sys, hashlib, time, operator
-
+import pprint
 
 def stack_string(stack):
 	out = ""
@@ -23,11 +23,13 @@ def build(filename):
 
 	f = open(filename, 'r')
 
+
+	output = {0:{}}
 	indent_level = ['']
 	selector_stack = deque()
-	output = {}
 	depth_inc = False
 	encounter = 0
+	key = 0
 
 	for line in f:
 		if not line.isspace():
@@ -36,13 +38,21 @@ def build(filename):
 				if line.find(';') == -1:
 					selector_stack.append(line.rstrip().lstrip())
 					selector = stack_string(selector_stack)
-					if selector not in output:
-						output[stack_string(selector_stack)] = [encounter, []]
+					if selector not in output[key]:
+						output[key][stack_string(selector_stack)] = [encounter, []]
 						encounter += 1
 
 					depth_inc = True
+					if line.find('@') != -1:
+						if selector in output[0]:
+							del output[0][selector]
+						selector_stack.pop()
+
+						key = line.lstrip().rstrip()
+						output[key] = {}
+						depth_inc = True
 				else:
-					output[stack_string(selector_stack)][1].append(line)
+					output[key][stack_string(selector_stack)][1].append(line.rstrip().lstrip())
 			else:
 
 				indent = line[:line.find(line.lstrip())]
@@ -53,10 +63,18 @@ def build(filename):
 					if line.find(';') == -1:
 						selector_stack.append(line.rstrip().lstrip())
 						selector = stack_string(selector_stack)
-						if selector not in output:
-							output[stack_string(selector_stack)] = [encounter, []]
+						if selector not in output[key]:
+							output[key][stack_string(selector_stack)] = [encounter, []]
 							encounter += 1
 						depth_inc = True
+						if line.find('@') != -1:
+							if selector in output[0]:
+								del output[0][selector]
+
+
+							key = line.lstrip().rstrip()
+							output[key] = {}
+							depth_inc = True
 					else:
 						depth_inc = False
 				elif depth_inc and len(indent_string(indent_level)) < len(indent):
@@ -64,8 +82,8 @@ def build(filename):
 					if line.find(';') == -1:
 						selector_stack.append(line.rstrip().lstrip())
 						selector = stack_string(selector_stack)
-						if selector not in output:
-							output[stack_string(selector_stack)] = [encounter, []]
+						if selector not in output[key]:
+							output[key][stack_string(selector_stack)] = [encounter, []]
 							encounter += 1
 
 						added_indent = indent[len(indent_string(indent_level)):]
@@ -73,11 +91,20 @@ def build(filename):
 						indent_level.append(added_indent)
 
 						depth_inc = True
+						if line.find('@') != -1:
+
+							if selector in output[0]:
+								del output[0][selector]
+
+							selector_stack.pop()
+							key = line.lstrip().rstrip()
+							output[key] = {}
+							depth_inc = True
 					else:
 						added_indent = indent[len(indent_string(indent_level)):]
 
 						indent_level.append(added_indent)
-						output[stack_string(selector_stack)][1].append(line)
+						output[key][stack_string(selector_stack)][1].append(line.rstrip().lstrip())
 						depth_inc = False
 				elif depth_inc:
 
@@ -89,19 +116,36 @@ def build(filename):
 				else:
 
 					while indent_string(indent_level) != indent:
+						if indent_string(indent_level) == '':
+							break
 
-						selector_stack.pop()
 						indent_level.pop()
+						if len(selector_stack) > 0:
+							selector_stack.pop()
+					if indent_string(indent_level) == '':
+
+						indent_level = ['']
+						selector_stack = deque()
+						depth_inc = False
+						key = 0
 					if line.find(';') == -1:
 						selector_stack.append(line.rstrip().lstrip())
 						selector = stack_string(selector_stack)
-						if selector not in output:
-							output[stack_string(selector_stack)] = [encounter, []]
+						if selector not in output[key]:
+							output[key][stack_string(selector_stack)] = [encounter, []]
 							encounter += 1
 
 						depth_inc = True
+						if line.find('@') != -1:
+
+							if selector in output[0]:
+								del output[0][selector]
+							selector_stack.pop()
+							key = line.lstrip().rstrip()
+							output[key] = {}
+							depth_inc = True
 					else:
-						output[stack_string(selector_stack)][1].append(line)
+						output[key][stack_string(selector_stack)][1].append(line.rstrip().lstrip())
 
 	f.close()
 	return output
@@ -110,15 +154,23 @@ def write(filename, data):
 
 	f = open(filename, 'w')
 	out = ''
-	keys = sorted(data.items(), key=operator.itemgetter(1))
-	for selector, _ in keys:
-		sel = selector.replace(' &', '')
-		out += sel + '{\n'
-		for i in data[selector][1]:
+	#pprint.pprint(data)
 
+	for key in data.keys():
+		tab = ''
+		if key != 0:
+			tab = '\t'
+			out += key + " {\n"
+		keys = sorted(data[key].items(), key=operator.itemgetter(1))
+		for selector, _ in keys:
+			sel = selector.replace(' &', '')
+			out += tab + sel + '{\n'
+			for i in data[key][selector][1]:
 
-			out += '\t' + i.lstrip().rstrip() + '\n'
-		out += '}\n\n'
+				out += tab + '\t' + i.lstrip().rstrip() + '\n'
+			out += tab + '}\n\n'
+		if key != 0:
+			out += '}\n'
 
 	f.write(out)
 	f.close()
