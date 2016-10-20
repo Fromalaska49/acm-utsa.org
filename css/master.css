@@ -170,6 +170,7 @@
 @media (max-width: 767px) {
 	#content {
 		margin-top: 50px;
+		padding-top: 10px;
 	}
 }
 
