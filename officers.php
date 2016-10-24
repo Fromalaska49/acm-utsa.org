@@ -103,17 +103,17 @@
 						</div>
 						<div class="officer-card">
 							<div class="officer-card-photo-container">
-								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
+								<img src="images/officer_photos/bennett.jpg" class="officer-card-photo" />
 							</div>
 							<h3 class="officer-card-title">
-								Officer
+								Public Relations Chair
 							</h3>
 							<h4 class="officer-card-name">
-								First Last
+								Andrew Bennett
 							</h3>
-							<a href="mailto:utsa.acm@gmail.com">
+							<a href="mailto:abennett0322@gmail.com">
 								<p class="officer-card-email">
-									user@example.com
+									abennett0322@gmail.com
 								</p>
 							</a>
 						</div>
