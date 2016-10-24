@@ -58,10 +58,10 @@
 								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
 							</div>
 							<h3 class="officer-card-title">
-								King of ACM
+								President
 							</h3>
 							<h4 class="officer-card-name">
-								Nishant Grover
+								Shane Becker
 							</h3>
 							<a href="mailto:utsa.acm@gmail.com">
 								<p class="officer-card-email">
@@ -74,10 +74,10 @@
 								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
 							</div>
 							<h3 class="officer-card-title">
-								Officer
+								Vice President
 							</h3>
 							<h4 class="officer-card-name">
-								First Last
+								Nishant Grover
 							</h3>
 							<a href="mailto:utsa.acm@gmail.com">
 								<p class="officer-card-email">
@@ -90,10 +90,26 @@
 								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
 							</div>
 							<h3 class="officer-card-title">
-								Officer
+								Secretary
 							</h3>
 							<h4 class="officer-card-name">
-								First Last
+								Andrew Hutton
+							</h3>
+							<a href="mailto:utsa.acm@gmail.com">
+								<p class="officer-card-email">
+									user@example.com
+								</p>
+							</a>
+						</div>
+						<div class="officer-card">
+							<div class="officer-card-photo-container">
+								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
+							</div>
+							<h3 class="officer-card-title">
+								Treasurer
+							</h3>
+							<h4 class="officer-card-name">
+								Jason Blig
 							</h3>
 							<a href="mailto:utsa.acm@gmail.com">
 								<p class="officer-card-email">
@@ -122,10 +138,10 @@
 								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
 							</div>
 							<h3 class="officer-card-title">
-								Officer
+								Social Events Chair
 							</h3>
 							<h4 class="officer-card-name">
-								First Last
+								Diego Romero
 							</h3>
 							<a href="mailto:utsa.acm@gmail.com">
 								<p class="officer-card-email">
@@ -134,6 +150,38 @@
 							</a>
 						</div>
 						<div class="officer-card">
+							<div class="officer-card-photo-container">
+								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
+							</div>
+							<h3 class="officer-card-title">
+								Media Chair
+							</h3>
+							<h4 class="officer-card-name">
+								Andrew Sanetra
+							</h3>
+							<a href="mailto:utsa.acm@gmail.com">
+								<p class="officer-card-email">
+									user@example.com
+								</p>
+							</a>
+						</div>
+						<div class="officer-card">
+							<div class="officer-card-photo-container">
+								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
+							</div>
+							<h3 class="officer-card-title">
+								Projects Chair
+							</h3>
+							<h4 class="officer-card-name">
+								Chris Doege
+							</h3>
+							<a href="mailto:utsa.acm@gmail.com">
+								<p class="officer-card-email">
+									user@example.com
+								</p>
+							</a>
+						</div>
+						<!-- <div class="officer-card">
 							<div class="officer-card-photo-container">
 								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
 							</div>
@@ -180,55 +228,7 @@
 									user@example.com
 								</p>
 							</a>
-						</div>
-						<div class="officer-card">
-							<div class="officer-card-photo-container">
-								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
-							</div>
-							<h3 class="officer-card-title">
-								Officer
-							</h3>
-							<h4 class="officer-card-name">
-								First Last
-							</h3>
-							<a href="mailto:utsa.acm@gmail.com">
-								<p class="officer-card-email">
-									user@example.com
-								</p>
-							</a>
-						</div>
-						<div class="officer-card">
-							<div class="officer-card-photo-container">
-								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
-							</div>
-							<h3 class="officer-card-title">
-								Officer
-							</h3>
-							<h4 class="officer-card-name">
-								First Last
-							</h3>
-							<a href="mailto:utsa.acm@gmail.com">
-								<p class="officer-card-email">
-									user@example.com
-								</p>
-							</a>
-						</div>
-						<div class="officer-card">
-							<div class="officer-card-photo-container">
-								<img src="images/officer_photos/default-pimg.jpg" class="officer-card-photo" />
-							</div>
-							<h3 class="officer-card-title">
-								Officer
-							</h3>
-							<h4 class="officer-card-name">
-								First Last
-							</h3>
-							<a href="mailto:utsa.acm@gmail.com">
-								<p class="officer-card-email">
-									user@example.com
-								</p>
-							</a>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
