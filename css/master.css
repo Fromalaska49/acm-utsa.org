@@ -81,12 +81,16 @@
 /* width < 768px (mobile) */
 @media (max-width: 767px) {
 	#logo {
-		height: 129px;
-		width: 129px;
+		height: 50px;
+		width: 50px;
 	}
 	.navbar-brand {
 		margin: 0 auto !important;
 	}
+	#main-menu-container, .navbar, .navbar > div, .navbar-header, .navbar-brand {
+		height: 50px !important;
+	}
+
 	#menu-container{
 		position: absolute;
 	}
@@ -161,6 +165,13 @@
 	padding: 54px 30px 20px 30px; /* min padding-top:54px; */
 	min-height: 500px; /* for demonstration */
 	box-shadow:0px 0px 15px -10px #000; /* for demonstration */
+}
+/* width < 768px (mobile) */
+@media (max-width: 767px) {
+	#content {
+		margin-top: 50px;
+		padding-top: 10px;
+	}
 }
 
 button, input[type=button], input[type=submit], .strip-button{
