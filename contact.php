@@ -14,7 +14,9 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- content here! -->
-					<h1>Contact Us</h1>
+					<h1>
+						Contact Us
+					</h1>
 					<p>
 						ACM's primary form of communication is Slack (acm-utsa.slack.com).
 					</p>
