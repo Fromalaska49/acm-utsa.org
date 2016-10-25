@@ -5,7 +5,7 @@
 				background-color: black;
 				color: green;
 				font-family: courier;
-				font-size:16px;
+				font-size:18px;
 			}
 			.command-block{
 				margin: 0px;
@@ -255,6 +255,9 @@
 					else if(keyCode == 8){
 						// backspace key pressed
 						$("#stdin").text($("#stdin").text().slice(0, -1));
+						window.setTimeout(function(){
+							$("#stdin").append('_');
+						}, 0);
 					}
 					//alert("e.ctrlKey = "+e.ctrlKey+"; keyCode = "+keyCode);
 				});
@@ -262,12 +265,16 @@
 					if(!window.processing){
 						// shell is free to process the next command
 						var keyCode = e.which || e.keyCode || 0;
-						console.log("keyCode = "+keyCode);
+						var stdin = $("#stdin").text();
+						stdin = stdin.substring(0, stdin.length - 1);
+						$("#stdin").text(stdin);
 						if(keyCode == 13){
 							// new command
 							if(window.typingPassword){
 								window.typingPassword = false;
-								$("#wrong-password-box").html("incorrect password");
+								if(!window.commandCancelled){
+									$("#wrong-password-box").html("incorrect password");
+								}
 								$("#wrong-password-box").removeAttr("id");
 								prepare_stdin();
 								return;
@@ -451,6 +458,7 @@
 							// write to #stdin
 							if(!window.typingPassword){
 								$("#stdin").append(String.fromCharCode(keyCode));
+								$("#stdin").append('_');
 							}
 						}
 					}
