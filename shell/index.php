@@ -47,7 +47,8 @@
 			var commandHistory = [];
 			var historyIndex = -1;
 			// use the filesystem object to simulate the real filesystem
-			var filesystem = JSON.parse('{"type":"folder","name":"/","address":"/","children":[{"type":"file","name":"about.php","address":"/about.php"},{"type":"file","name":"calendar.php","address":"/calendar.php"},{"type":"file","name":"contact.php","address":"/contact.php"},{"type":"file","name":"dues.php","address":"/dues.php"},{"type":"file","name":"favicon.ico","address":"/favicon.ico"},{"type":"file","name":"groups.php","address":"/groups.php"},{"type":"file","name":"index.php","address":"/index.php"},{"type":"file","name":"join.php","address":"/join.php"},{"type":"file","name":"officers.php","address":"/officers.php"},{"type":"folder","name":"images","address":"/images","children":[{"type":"folder","name":"icons","address":"/images/icons","children":[{"type":"file","name":"add-to-slack.png","address":"/images/icons/add-to-slack.png"}]},{"type":"file","name":"logo-bordered.png","address":"/images/logo-bordered.png"},{"type":"file","name":"logo.png","address":"/images/logo.png"},{"type":"folder","name":"officer_photos","address":"/images/officer_photos","children":[{"type":"file","name":"bennett.jpg","address":"/images/officer_photos/bennett.jpg"},{"type":"file","name":"benett.jpg","address":"/images/officer_photos/default-pimg.jpg"}]}]},{"type":"folder","name":"css","address":"/css","children":[{"type":"file","name":"index.css","address":"/css/index.css"},{"type":"file","name":"index.pyp","address":"/css/index.pyp"},{"type":"file","name":"index.css","address":"/css/index.css"}]}]}');
+			var filesystem = JSON.parse('{"type":"folder","name":"/","address":"/","children":[{"type":"file","name":"about.php","address":"/about.php"},{"type":"file","name":"calendar.php","address":"/calendar.php"},{"type":"file","name":"contact.php","address":"/contact.php"},{"type":"file","name":"dues.php","address":"/dues.php"},{"type":"file","name":"favicon.ico","address":"/favicon.ico"},{"type":"file","name":"groups.php","address":"/groups.php"},{"type":"file","name":"index.php","address":"/index.php"},{"type":"file","name":"join.php","address":"/join.php"},{"type":"file","name":"officers.php","address":"/officers.php"},{"type":"folder","name":"images","address":"/images","children":[{"type":"folder","name":"icons","address":"/images/icons","children":[{"type":"file","name":"add-to-slack.png","address":"/images/icons/add-to-slack.png"}]},{"type":"file","name":"logo-bordered.png","address":"/images/logo-bordered.png"},{"type":"file","name":"logo.png","address":"/images/logo.png"},{"type":"folder","name":"officer_photos","address":"/images/officer_photos","children":[{"type":"file","name":"bennett.jpg","address":"/images/officer_photos/bennett.jpg"},{"type":"file","name":"default-pimg.jpg","address":"/images/officer_photos/default-pimg.jpg"}]}]},{"type":"folder","name":"css","address":"/css","children":[{"type":"file","name":"index.css","address":"/css/index.css"},{"type":"file","name":"index.pyp","address":"/css/index.pyp"},{"type":"file","name":"master.css","address":"/css/master.css"}]}]}');
+			path = [filesystem];
 			/*
 			var filesystem = JSON.parse('{
 				"type": "folder",
@@ -125,7 +126,7 @@
 										"address": "/images/officer_photos/bennett.jpg"
 									}, {
 										"type": "file",
-										"name": "benett.jpg",
+										"name": "default-pimg.jpg",
 										"address": "/images/officer_photos/default-pimg.jpg"
 									}
 								]
@@ -146,8 +147,8 @@
 								"address": "/css/index.pyp"
 							}, {
 								"type": "file",
-								"name": "index.css",
-								"address": "/css/index.css"
+								"name": "master.css",
+								"address": "/css/master.css"
 							}
 						]
 					}
@@ -156,7 +157,6 @@
 			*/
 			
 			function get_child_index(parentDir, childName){
-				//alert("childName = "+childName+" ; "+JSON.stringify(parentDir));
 				for(var i = 0; i < parentDir.children.length; i++){
 					if(parentDir.children[i].name == childName){
 						return i;
@@ -168,7 +168,7 @@
 			function get_item(relative_path){
 				var i = 0;
 				var pwd_copy = pwd;
-				var path_copy = path;
+				var path_copy = JSON.parse(JSON.stringify(path));
 				if(relative_path.charAt(relative_path.length - 1) == '/'){
 					relative_path = relative_path.split("/").slice(0, -1).join("/");
 				}
@@ -197,7 +197,12 @@
 						var dir = (path_copy.length > 1) ? path_copy[path_copy.length - 1] : filesystem;
 						var child_index = get_child_index(dir, temp_path[i]);
 						if(child_index == -1){
-							$("#stdout").html(pwd_copy + "/" + temp_path[i] + " does not exist");
+							if(pwd_copy == "/"){
+								$("#stdout").html(pwd_copy + temp_path[i] + " does not exist");
+							}
+							else{
+								$("#stdout").html(pwd_copy + "/" + temp_path[i] + " does not exist");
+							}
 							i = path_copy.length;
 						}
 						else{
@@ -218,7 +223,7 @@
 				$("#ps1").removeAttr("id");
 				$("#stdin").removeAttr("id");
 				$("#stdout").removeAttr("id");
-				$("#shell-window").append("<div class=\"command-block\"><div class=\"ps1\" id=\"ps1\">acm-utsa.org $&nbsp;</div><div class=\"stdin\" id=\"stdin\"></div><div class=\"stdout\" id=\"stdout\"></div></div>");
+				$("#shell-window").append("<div class=\"command-block\"><div class=\"ps1\" id=\"ps1\">acm-utsa.org $&nbsp;</div><div class=\"stdin\" id=\"stdin\">_</div><div class=\"stdout\" id=\"stdout\"></div></div>");
 				$("html, body").scrollTop($(document).height());
 			}
 			
@@ -247,6 +252,15 @@
 						$("#stdin").text(commandHistory[historyIndex]);
 					}
 					else if((keyCode == 67 || keyCode == 99) && e.ctrlKey){
+						if($("#stdin").text().slice(-1) == '_'){
+							// will replace '_' with '^C' at end of stdin
+							// TODO fix the case where the user typed '_' at the end of stdin
+							$("#stdin").text($("#stdin").text().slice(0, -1));
+							$("#stdin").append('^C');
+						}
+						else{
+							$("#stdout").append('^C');
+						}
 						prepare_stdin();
 						window.setTimeout(function(){
 							window.commandCancelled = false;
@@ -259,7 +273,6 @@
 							$("#stdin").append('_');
 						}, 0);
 					}
-					//alert("e.ctrlKey = "+e.ctrlKey+"; keyCode = "+keyCode);
 				});
 				$(document).on("keypress", function(e){
 					if(!window.processing){
@@ -303,10 +316,17 @@
 											$("#stdout").html("cd expects an argument");
 										}
 										else{
-											if(argv[1].charAt([argv[1].length - 1]) == '/'){
+											if(argv[1].length > 1 && argv[1].charAt([argv[1].length - 1]) == '/'){
 												argv[1] = argv[1].split("/").slice(0, -1).join("/");
 											}
-											//alert(argv[1]);
+											else if(argv[1].length == 1 && argv[1].charAt([argv[1].length - 1]) == '/'){
+												pwd = "/";
+												path = [];
+												path[0] = filesystem;
+												window.processing = false;
+												prepare_stdin();
+												return;
+											}
 											var temp_path = argv[1].split(/\//);
 											var i = 0;
 											if(argv[1].charAt(0) == '/'){
@@ -314,6 +334,7 @@
 												path = [];
 												path[0] = filesystem;
 												i++;
+												argv[1] = argv[1].substring(1, argv[1].length);
 											}
 											var ever = true;
 											for(ever; i < temp_path.length; i++){
@@ -333,8 +354,13 @@
 													var dir = (path.length >= 1) ? path[path.length - 1] : filesystem;
 													var child_index = get_child_index(dir, temp_path[i]);
 													if(child_index == -1){
-														$("#stdout").html(pwd + "/" + temp_path[i] + " does not exist");
-														i = path.length;
+														if(pwd == "/"){
+															$("#stdout").html(pwd + temp_path[i] + " does not exist");
+														}
+														else{
+															$("#stdout").html(pwd + "/" + temp_path[i] + " does not exist");
+														}
+														i = temp_path.length;
 													}
 													else{
 														path.push(dir.children[child_index]);
@@ -348,7 +374,6 @@
 												}
 											}
 										}
-										//alert("done; pwd = "+pwd);
 									break;
 									case "pwd":
 										// prints current directory
@@ -359,7 +384,7 @@
 										var ls_output = "";
 										var dir;
 										if(path.length > 1){
-											dir = path[path.length-1];
+											dir = path[path.length - 1];
 										}
 										else{
 											dir = filesystem;
@@ -391,6 +416,11 @@
 												},
 												success: function(response){
 													$("#stdout").html(response);
+													window.setTimeout(function(){
+														prepare_stdin();
+													}, 100);
+													window.processing = false;
+													return;
 												}
 											});
 										}
@@ -473,7 +503,7 @@
 					<!-- pwd -->
 					acm-utsa.org $
 				</div>
-				<div class="stdin" id="stdin"><!-- Standard Input --></div>
+				<div class="stdin" id="stdin"><!-- Standard Input -->_</div>
 				<div class="stdout" id="stdout">
 					<!-- Standard Output -->
 					
