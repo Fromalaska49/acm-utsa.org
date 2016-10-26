@@ -17,52 +17,79 @@
 					<p>
 
 					</p>
-					<div class="group">
-						<h2>Linux</h2>
+					<div class="row section-container group">
+						<div class="col-sm-12">
+						<h2>
+							Linux
+						</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
+						</div>
 					</div>
-					<div class="group">
-						<h2>Web Development</h2>
-						<p>
-							The ACM Web Development group is dedicated to designing, developing, and
-							publishing the chapter's website and any associated web content.
-						</p>
-						<p>
-							For more information, join the #web-dev channel on Slack.
-						</p>
-						<h3>Meeting Times</h3>
-						<p>
-							Weekly, every Tuesday at 11:30am in the CS Main Lab (Linux section)
-						</p>
+					<div class="row section-container group">
+						<div class="col-sm-12">
+							<h2>
+								Web Development
+							</h2>
+							<p>
+								The ACM Web Development group is dedicated to designing, developing, and
+								publishing the chapter's website and any associated web content.
+							</p>
+							<p>
+								For more information, join the #web-dev channel on Slack.
+							</p>
+							<h3>Meeting Times</h3>
+							<p>
+								Weekly, every Tuesday at 11:30am in the CS Main Lab (Linux section)
+							</p>
+						</div>
 					</div>
-					<div class="group">
-						<h2>ACM-W</h2>
-						<p>
-							The Association for Computing Machinery &mdash; Women chapter is
-							ACM's sister organization dedicated to the advancement of women
-							and other underrepresented groups in the field of computer
-							science.
-						</p>
+					<div class="row section-container group">
+						<div class="col-sm-12">
+							<h2>ACM-W</h2>
+							<p>
+								The Association for Computing Machinery &mdash; Women chapter is
+								ACM's sister organization dedicated to the advancement of women
+								and other underrepresented groups in the field of computer
+								science.
+							</p>
+						</div>
 					</div>
-					<div class="group">
-						<h2>RowdyHacks Planning</h2>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-						</p>
+					<div class="row section-container group">
+						<div class="col-sm-12">
+							<h2>
+								RowdyHacks Planning
+							</h2>
+							<p>
+								RowdyHacks is UTSA's offical annual hackathon hosted by ACM.
+							</p>
+							<p>
+								Every year, members from ACM get together to help plan and organize RowdyHacks.
+								It is a great way to get involved and to learn about organizing events. So 
+								whether you are a seasoned veteran, or new to hackathons, everyone is encouraged
+								to be a part of the planning commitee.
+							</p>
+							<p>
+								For more information reach out to us to see how you can get involved.
+							</p>
+						</div>
 					</div>
-					<div class="group">
-						<h2>ACM-ICPC</h2>
-						<p>
-							The ACM-ICPC, or International Collegiate Programming Contest, is
-							a world-wide programming contest where thousands of 3-person teams
-							compete by solving around 8-12 difficult algorithm problems.
-						</p>
-						<p>
-							If you are interested in joining the UTSA ICPC team for the 2017-2018 school year,
-							join us on Slack at [slack link].
-						</p>
+					<div class="row section-container group">
+						<div class="col-sm-12">
+							<h2>
+								ACM-ICPC
+							</h2>
+							<p>
+								The ACM-ICPC, or International Collegiate Programming Contest, is
+								a world-wide programming contest where thousands of 3-person teams
+								compete by solving around 8-12 difficult algorithm problems.
+							</p>
+							<p>
+								If you are interested in joining the UTSA ICPC team for the 2017-2018 school year,
+								join us on Slack at [slack link].
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
