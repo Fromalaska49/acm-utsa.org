@@ -14,17 +14,19 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<!-- content here! -->
-					<h1>
-						Contact Us
-					</h1>
-					<p>
-						ACM's primary form of communication is Slack (acm-utsa.slack.com).
-					</p>
-					[add to slack button]
-					<p>
-						For any general inquiries, comments, questions, or any other business, please
-						contact us at <a href="mailto:acm.utsa@gmail.com">acm.utsa@gmail.com</a>.
-					</p>
+					<div class="row section-container group">
+						<div class="col-sm-12">
+							<h1>Contact Us</h1>
+							<p>
+								ACM's primary form of communication is Slack (acm-utsa.slack.com).
+							</p>
+							[add to slack button]
+							<p>
+								For any general inquiries, comments, questions, or any other business, please
+								contact us at <a href="mailto:acm.utsa@gmail.com">acm.utsa@gmail.com</a>.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
